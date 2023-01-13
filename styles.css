@@ -94,7 +94,7 @@ ul{
     background-color: var(--cardBackgroundColor);
     border: none;
     height: 90%;
-    width: 400px;
+    width: 350px;
     padding: 0.5rem;
 }
 
@@ -270,13 +270,16 @@ ul{
     flex-direction: row;
     margin: 1rem 4rem;
     gap: 1rem;
-    align-items: stretch;
+    align-items: flex-start;
 }
 
 /* Ads Container */
 .ads{
     background-color: var(--cardBackgroundColor);
     box-shadow: 1px 1px 2px 1px var(--shadowColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Ads Image Card */
@@ -480,3 +483,33 @@ ul{
     margin-top: 0.3rem;
 }
 /* End of Books and Music Instruments Section */
+
+/* Media Query For Mobile (600px or less)*/
+@media only screen and (max-width: 950px) {
+    ul{
+        justify-content: start;
+    }
+    .nav-link{
+        margin: 0 0.1rem;
+    }
+    .login-button{
+        padding: 0 1rem;
+    }
+    .search-box{
+        width: 100%;
+    }
+    .deals-ads{
+        flex-direction: column;
+        margin: 1rem 0.5rem;
+        align-items: center;
+    }
+    .deals-content{
+        justify-content: center;
+    }
+    .products{
+        margin: 1rem 0.5rem;
+    }
+    .products-content{
+        justify-content: center;
+    }
+}
