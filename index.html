@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Flipkart Webpage Demonstration">
+    <meta name="keywords" content="HTML, CSS, Simform, Flipkart, Shopping, Products">
+    <meta name="author" content="Karansinh Raj">
+
+    <title>Online Shopping Site</title>
+
+    <!-- Google Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,500,0,0" />
+
+    <!-- My Custom Styles -->
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <!-- Main Container -->
+    <div class="main">
+
+        <!-- Navigation Container -->
+        <nav>
+            <ul>
+                <li class="nav-link"><a href="#" class="logo-link"><img class="logo" src="./images/flipkart_plus_logo.png" alt="Flipkart Plus logo"></a></li>
+                <li class="nav-link"><input type="search" placeholder="Search for products, brands and more" class="search-box"/><button class="search-button"><span class="material-symbols-outlined search-icon">search</span></button></li>
+                <li class="nav-link">
+                    <div class="login-dropdown">
+
+                        <button class="login-button">Login</button>
+                        <!-- Login Dropdown Content -->
+                        <div class="login-dropdown-content">
+                            <a href="#">New Customer? <span class="signup-link">Signup</span></a>
+                            <a href="#"><span class="material-symbols-outlined icon">person</span> My Profile</a>
+                            <a href="#"><span class="material-symbols-outlined icon">maps_ugc</span> Flipkart Plus Zone</a>
+                            <a href="#"><span class="material-symbols-outlined icon">inactive_order</span> Orders</a>
+                            <a href="#"><span class="material-symbols-outlined icon">favorite</span> Wishlist</a>
+                            <a href="#"><span class="material-symbols-outlined icon">stars</span> Rewards</a>
+                            <a href="#"><span class="material-symbols-outlined icon">redeem</span> Gift Cards</a>
+                        </div>
+                        <!-- End Of Login Dropdown Content -->
+                    </div>
+                </li>
+                <li class="nav-link"><a href="#">Become a Seller</a></li>
+                <li class="nav-link">
+                    <div class="more-dropdown">
+                        <span class="more-button">More <span class="material-symbols-outlined expand-icon">expand_more</span></span>
+
+                        <!-- More Dropdown Content -->
+                        <div class="more-dropdown-content">
+                            <a href="#"><span class="material-symbols-outlined icon">notifications</span> Notification Preferences</a>
+                            <a href="#"><span class="material-symbols-outlined icon">support_agent</span> 24x7 Customer Care</a>
+                            <a href="#"><span class="material-symbols-outlined icon">show_chart</span> Advertise Preferences</a>
+                            <a href="#"><span class="material-symbols-outlined icon">download</span> Download App</a>
+                        </div>
+                        <!-- End Of More Dropdown Content -->
+                    </div>
+                </li>
+                <li class="nav-link"><a href="#"><span class="material-symbols-outlined cart-icon">shopping_cart</span>Cart</a></li>
+            </ul>
+        </nav>
+        <!-- End Of Navigation Container -->
+
+        <!-- Categories Container -->
+        <div class="categories">
+            <div class="category">
+                <img src="images/categories/top_offers.webp" alt="Top Offers" class="category-image"/>
+                <p class="category-name">Top Offers</p>
+            </div>
+            <div class="category">
+                <img src="images/categories/grocery.webp" alt="Grocery" class="category-image"/>
+                <p class="category-name">Grocery</p>
+            </div>
+            <div class="category">
+                <img src="images/categories/mobiles.webp" alt="Mobiles" class="category-image"/>
+                <p class="category-name">Mobiles</p>
+            </div>
+            <div class="category">
+                <img src="images/categories/fashion.webp" alt="Fashion" class="category-image"/>
+                <p class="category-name">
+                    Fashion <span class="material-symbols-outlined expand-icon">expand_more</span>
+                </p>
+            </div>
+            <div class="category">
+                <img src="images/categories/electronics.webp" alt="Electronics" class="category-image"/>
+                <p class="category-name">
+                    Electronics <span class="material-symbols-outlined expand-icon">expand_more</span>
+                </p>
+            </div>
+            <div class="category">
+                <img src="images/categories/home.webp" alt="Home" class="category-image"/>
+                <p class="category-name">
+                    Home <span class="material-symbols-outlined expand-icon">expand_more</span>
+                </p>
+            </div>
+            <div class="category">
+                <img src="images/categories/appliances.webp" alt="Appliances" class="category-image"/>
+                <p class="category-name">
+                    Appliances <span class="material-symbols-outlined expand-icon">expand_more</span>
+                </p>
+            </div>
+            <div class="category">
+                <img src="images/categories/travel.webp" alt="Travel" class="category-image"/>
+                <p class="category-name">Travel</p>
+            </div>
+            <div class="category">
+                <img src="images/categories/toys_and_more.webp" alt="Toys & more" class="category-image"/>
+                <p class="category-name">Toys & more</p>
+            </div>
+            <div class="category">
+                <img src="images/categories/two_wheelers.webp" alt="Two Wheelers" class="category-image"/>
+                <p class="category-name">
+                    Two Wheelers <span class="material-symbols-outlined expand-icon">expand_more</span>
+                </p>
+            </div>
+        </div>
+        <!-- End Of Categories Container -->
+
+        <div class="deals-ads">
+            <!-- Deals Container (Deals of the day) -->
+            <div class="deals">
+
+                <!-- Deals Header Container -->
+                <div class="deals-header">
+                    <div class="deals-header-title">
+                        <h3>Deals of the Day</h3>
+                    </div>
+                    <div class="deals-header-time">
+                        <span class="material-symbols-outlined">schedule</span> 22:07:36 Left
+                    </div>
+                    <button class="view-all-button">View All</button>
+                </div>
+                <!-- End Of Deals Header Container -->
+
+                <!-- Deals Content Container -->
+                <div class="deals-content">
+                    <div class="deal">
+                        <img src="images/deals_of_the_day/clock.webp" alt="Clocks" class="deal-image"/>
+                        <p class="deal-name">Casio, Fastrack, Sonata</p>
+                        <p class="deal-discount">Upto 80%+ Extra 10% off</p>
+                        <p class="deal-features">Knockout Deals!</p>
+                    </div>
+                    <div class="deal">
+                        <img src="images/deals_of_the_day/home_temples.webp" alt="Home Temples" class="deal-image"/>
+                        <p class="deal-name">Home Temples & More</p>
+                        <p class="deal-discount">Extra 10% off</p>
+                        <p class="deal-features">Space Saving Furniture</p>
+                    </div>
+                    <div class="deal">
+                        <img src="images/deals_of_the_day/tablet_cases.webp" alt="Tablet Cases" class="deal-image"/>
+                        <p class="deal-name">Premium Tablet Cases</p>
+                        <p class="deal-discount">Extra 10% off</p>
+                        <p class="deal-features">For All Top Models </p>
+                    </div>
+                    <div class="deal">
+                        <img src="images/deals_of_the_day/home_decor.webp" alt="Home Decor" class="deal-image"/>
+                        <p class="deal-name">Best Of Home Decor</p>
+                        <p class="deal-discount">From ₹79</p>
+                        <p class="deal-features">Lowest Price Ever</p>
+                    </div>
+                    <div class="deal">
+                        <img src="images/deals_of_the_day/metronaut.webp" alt="Metronaut" class="deal-image"/>
+                        <p class="deal-name">Metronaut, Provogue &...</p>
+                        <p class="deal-discount">From ₹249+Extra 10% Off</p>
+                        <p class="deal-features">Jackets, Dresses & More</p>
+                    </div>
+                    <div class="deal">
+                        <img src="images/deals_of_the_day/lava.webp" alt="Lava A1500" class="deal-image"/>
+                        <p class="deal-name">Lava A1500</p>
+                        <p class="deal-discount">Flat ₹830 off</p>
+                        <p class="deal-features">Now ₹999</p>
+                    </div>
+                </div>
+                <!-- End Of Deals Content Container -->
+            </div>
+            <!-- End Of Deals Container -->
+
+            <!-- Ads Container -->
+            <div class="ads">
+                <img src="/images/flipkart_ad.PNG" alt="Flipkart Ads">
+            </div>
+            <!-- End Of Ads Container -->
+        </div>
+        
+
+        <!-- Products Container(Books and music instruments) -->
+        <div class="products">
+
+            <!-- Products Header Container -->
+            <div class="products-header">
+                <div class="products-header-title">
+                    <h3>Books and music Instruments</h3>
+                    <p class="products-header-subtitle">Shop Now!</p>
+                </div>
+                <button class="view-all-button">View All</button>
+            </div>
+            <!-- End Of Products Header Container -->
+
+            <!-- Products Content Container -->
+            <div class="products-content">
+                <div class="product">
+                    <img src="images/books_and_music_instruments/harmonium.webp" alt="Harmonium" class="product-image"/>
+                    <p class="product-name">Harmoniums</p>
+                    <p class="product-discount">Upto 60% off</p>
+                    <p class="product-features">Shop Now!</p>
+                </div>
+                <div class="product">
+                    <img src="images/books_and_music_instruments/flutes.webp" alt="Flutes" class="product-image"/>
+                    <p class="product-name">Flutes</p>
+                    <p class="product-discount">Upto 80% off</p>
+                    <p class="product-features">Shop Now!</p>
+                </div>
+                <div class="product">
+                    <img src="images/books_and_music_instruments/guitars.webp" alt="Acoustic Guitars" class="product-image"/>
+                    <p class="product-name">Acoustic Guitars</p>
+                    <p class="product-discount">Starting ₹1799</p>
+                    <p class="product-features">Juarez, Revel</p>
+                </div>
+                <div class="product">
+                    <img src="images/books_and_music_instruments/musical_accessories.webp" alt="Musical Accessories" class="product-image"/>
+                    <p class="product-name">Musical Accessories</p>
+                    <p class="product-discount">Upto 80% off</p>
+                    <p class="product-features">Shop Now!</p>
+                </div>
+                <div class="product">
+                    <img src="images/books_and_music_instruments/microphone_accessories.webp" alt="Microphone Accessories" class="product-image"/>
+                    <p class="product-name">Microphone Accessories</p>
+                    <p class="product-discount">Uto 80% Off</p>
+                    <p class="product-features">Shop Now!</p>
+                </div>
+                <div class="product">
+                    <img src="images/books_and_music_instruments/guitars_new.webp" alt="Acoustic Guitars" class="product-image"/>
+                    <p class="product-name">Acoustic Guitars</p>
+                    <p class="product-discount">Starting ₹1999</p>
+                    <p class="product-features">By Revel</p>
+                </div>
+            </div>
+            <!-- End Of Products Content Container -->
+        </div>
+        <!-- End Of Products Container -->
+    </div>
+    <!-- End Of Main Container -->
+</body>
+</html>

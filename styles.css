@@ -1,0 +1,482 @@
+/* Colors variables */
+:root{
+    --primaryColor: #2874F0;
+    --backgroundColor: #F1F3F6;
+    --cardBackgroundColor: #FFFFFF;
+    --discountTextColor: #388E3C;
+    --textColor: #000000;
+    --secondaryTextColor: #79797d;
+    --shadowColor: #c3c4c7;
+}
+
+/* All elements */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Body style */
+body{
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--backgroundColor);
+    margin-bottom: 10rem;
+}
+
+/* Start of Navigation Section */
+
+/* Navigation bar */
+nav{
+    background-color: var(--primaryColor);
+    box-shadow: 1px 1px 2px 2px var(--shadowColor);
+    position: sticky;
+    top: 0;
+}
+
+/* Navigation bar list (UL) */
+ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* Navigation bar list item */
+.nav-link{
+    height: 3.5rem;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    margin: 0 1rem;
+}
+
+/* Navigation bar list item link */
+.nav-link a{
+    color: var(--cardBackgroundColor);
+    font-weight: 500;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+/* Cart Icon */
+.cart-icon{
+    font-size: 1.2em;
+}
+
+/* Expand Icon */
+.expand-icon{
+    font-size: 1.2em;
+}
+
+/* Search Icon */
+.search-icon{
+    font-size: 1.5em;
+    font-weight: 600;
+    color: var(--primaryColor);
+}
+
+/* Logo link */
+.logo-link{
+    height: 100%;
+}
+
+/* Logo image */
+.logo{
+    height: 100%;
+}
+
+/* Search box (Input) */
+.search-box{
+    background-color: var(--cardBackgroundColor);
+    border: none;
+    height: 90%;
+    width: 400px;
+    padding: 0.5rem;
+}
+
+/* Search box focus style */
+.search-box:focus{
+    outline: none;
+}
+
+/* Search button */
+.search-button{
+    background-color: var(--cardBackgroundColor);
+    height: 90%;
+    padding: 0.5rem;
+    border: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Login Dropdown */
+.login-dropdown{
+    height: 100%;
+}
+
+/* Login Button */
+.login-button{
+    background-color: var(--cardBackgroundColor);
+    border: none;
+    color: var(--primaryColor);
+    height: 90%;
+    padding: 0 2rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* Login Dropdown Content */
+.login-dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: var(--cardBackgroundColor);
+    box-shadow: 1px 1px 2px 1px var(--shadowColor);
+    z-index: 1;
+    margin-top: 0.5rem;
+}
+
+/* Login Dropdown Content Link */
+.login-dropdown-content a{
+    padding: 0.8rem;
+    color: var(--textColor);
+    font-size: 0.8em;
+    border-bottom: 0.1px solid var(--shadowColor);
+}
+
+/* Signup Link (Login Dropdown Content) */
+.signup-link{
+    margin-left: 2rem;
+    color: var(--primaryColor);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Login Dropdown Hover */
+.login-dropdown:hover .login-dropdown-content{
+    display: block;
+}
+
+/* Login Dropdown Content Link hover */
+.login-dropdown-content a:hover{
+    background-color: var(--backgroundColor);
+}
+
+/* More Dropdown */
+.more-dropdown{
+    height: 100%;
+}
+
+/* More Button */
+.more-button{
+    color: var(--cardBackgroundColor);
+    font-weight: 500;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* More Dropdown Content */
+.more-dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: var(--cardBackgroundColor);
+    box-shadow: 1px 1px 2px 1px var(--shadowColor);
+    z-index: 1;
+    margin-top: 0.4rem;
+}
+
+/* More Dropdown Content Link */
+.more-dropdown-content a{
+    padding: 0.8rem;
+    color: var(--textColor);
+    font-size: 0.8em;
+    border-bottom: 0.1px solid var(--shadowColor);
+}
+
+/* More Dropdown Hover */
+.more-dropdown:hover .more-dropdown-content{
+    display: block;
+}
+
+/* More Dropdown Content Link hover */
+.more-dropdown-content a:hover{
+    background-color: var(--backgroundColor);
+}
+
+/* Dropdown Content Icons */
+.icon{
+    font-size: 1.6em;
+    color: var(--primaryColor);
+    margin-right: 0.5rem;
+}
+/* End of Navigation Section */
+
+/* Start of Categories Section */
+
+/* Categories layout */
+.categories{
+    background-color: var(--cardBackgroundColor);
+    box-shadow: 1px 1px 2px 1px var(--shadowColor);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Category card */
+.category{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    width: fit-content;
+    padding: 1rem;
+}
+
+/* Category card hover */
+.category:hover{
+    cursor: pointer;
+    color: var(--primaryColor);
+}
+
+/* Category card image */
+.category-image{
+    width: 5rem;
+    height: 5rem;
+}
+
+/* Category card name */
+.category-name{
+    font-size: 0.9em;
+    font-weight: 700;
+    margin-top: 0.3rem;
+    display: flex;
+}
+/* End of Categories Section */
+
+/* Start of Deals of the day Section */
+
+/* Deals-Ads Container */
+.deals-ads{
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 4rem;
+    gap: 1rem;
+    align-items: stretch;
+}
+
+/* Ads Container */
+.ads{
+    background-color: var(--cardBackgroundColor);
+    box-shadow: 1px 1px 2px 1px var(--shadowColor);
+}
+
+/* Ads Image Card */
+.ads img{
+    width: 13rem;
+    height: 100%;
+    padding: 0.5rem;
+}
+
+/* Deals Container */
+.deals{
+    background-color: var(--cardBackgroundColor);
+    box-shadow: 1px 1px 2px 1px var(--shadowColor);
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Deals Content Container */
+.deals-content{
+    border-top: 0.1px solid var(--shadowColor);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* Deal Card */
+.deal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    width: fit-content;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+/* Deal Card Hover */
+.deal:hover .deal-image{
+    cursor: pointer;
+    transform: scale(1.01);
+}
+
+/* Deal Card image */
+.deal-image{
+    padding: 0.1rem;
+    width: 10rem;
+    height: 10rem;
+}
+
+/* Deal Card name */
+.deal-name{
+    font-size: 0.9em;
+    font-weight: 700;
+    margin-top: 0.8rem;
+}
+
+/* Deal Card Discount */
+.deal-discount{
+    font-size: 0.9em;
+    font-weight: 200;
+    color: var(--discountTextColor);
+    margin-top: 0.5rem;
+}
+
+/* Deal Card Features */
+.deal-features{
+    font-size: 0.9em;
+    font-weight: 300;
+    color: var(--secondaryTextColor);
+    margin-top: 0.5rem;
+}
+
+/* Deals Header Container */
+.deals-header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+}
+
+/* Deals Header Title */
+.deals-header-title{
+    font-size: 1em;
+    margin-right: 1rem;
+}
+
+/* Deals Header Timer */
+.deals-header-time{
+    font-size: 0.9em;
+    color: var(--secondaryTextColor);
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+    flex-grow: 1;
+}
+
+/* View-all Button */
+.view-all-button{
+    padding: 0.5rem 1rem;
+    background-color: var(--primaryColor);
+    color: var(--cardBackgroundColor);
+    border: none;
+    cursor: pointer;
+}
+/* End of Deals of the day Section */
+
+/* Start of Books and Music Instruments Section */
+
+/* Products Container */
+.products{
+    background-color: var(--cardBackgroundColor);
+    box-shadow: 1px 1px 2px 1px var(--shadowColor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 4rem;
+}
+
+/* Products Content Container */
+.products-content{
+    border-top: 0.1px solid var(--shadowColor);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* Product Card */
+.product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    width: fit-content;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+/* Product Card Hover */
+.product:hover .product-image{
+    cursor: pointer;
+    transform: scale(1.01);
+}
+
+/* Product card image */
+.product-image{
+    padding: 0.1rem;
+    width: 10rem;
+    height: 10rem;
+}
+
+/* Product card name */
+.product-name{
+    font-size: 0.9em;
+    font-weight: 700;
+    margin-top: 0.8rem;
+}
+
+/* Product card discount */
+.product-discount{
+    font-size: 0.9em;
+    font-weight: 200;
+    color: var(--discountTextColor);
+    margin-top: 0.5rem;
+}
+
+/* Product card features */
+.product-features{
+    font-size: 0.9em;
+    font-weight: 300;
+    color: var(--secondaryTextColor);
+    margin-top: 0.5rem;
+}
+
+/* Products Header Container */
+.products-header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+}
+
+/* Products Header Title */
+.products-header-title{
+    font-size: 1em;
+    margin-right: 1rem;
+    flex-grow: 1;
+}
+
+/* Products Header Subtitle */
+.products-header-subtitle{
+    color: var(--secondaryTextColor);
+    font-size: 0.9em;
+    margin-top: 0.3rem;
+}
+/* End of Books and Music Instruments Section */
