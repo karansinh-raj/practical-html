@@ -484,7 +484,7 @@ ul{
 }
 /* End of Books and Music Instruments Section */
 
-/* Media Query For Mobile (600px or less)*/
+/* Media Query For Mobile/ Tablets (950px or less)*/
 @media only screen and (max-width: 950px) {
     ul{
         justify-content: start;
