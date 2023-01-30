@@ -15,6 +15,9 @@
 
     <!-- My Custom Styles -->
     <link rel="stylesheet" href="styles.css" />
+
+    <!-- My Custom JavaScript -->
+    <script src="script.js" defer></script>
 </head>
 <body>
     <!-- Main Container -->
@@ -134,43 +137,47 @@
                 <!-- End Of Deals Header Container -->
 
                 <!-- Deals Content Container -->
-                <div class="deals-content">
-                    <div class="deal">
-                        <img src="images/deals_of_the_day/clock.webp" alt="Clocks" class="deal-image"/>
-                        <p class="deal-name">Casio, Fastrack, Sonata</p>
-                        <p class="deal-discount">Upto 80%+ Extra 10% off</p>
-                        <p class="deal-features">Knockout Deals!</p>
+                <div class="deals-slider" id="deals-slider">
+                    <div class="deals-content" id="deals-content">
+                        <div class="deal">
+                            <img src="images/deals_of_the_day/clock.webp" alt="Clocks" class="deal-image"/>
+                            <p class="deal-name">Casio, Fastrack, Sonata</p>
+                            <p class="deal-discount">Upto 80%+ Extra 10% off</p>
+                            <p class="deal-features">Knockout Deals!</p>
+                        </div>
+                        <div class="deal">
+                            <img src="images/deals_of_the_day/home_temples.webp" alt="Home Temples" class="deal-image"/>
+                            <p class="deal-name">Home Temples & More</p>
+                            <p class="deal-discount">Extra 10% off</p>
+                            <p class="deal-features">Space Saving Furniture</p>
+                        </div>
+                        <div class="deal">
+                            <img src="images/deals_of_the_day/tablet_cases.webp" alt="Tablet Cases" class="deal-image"/>
+                            <p class="deal-name">Premium Tablet Cases</p>
+                            <p class="deal-discount">Extra 10% off</p>
+                            <p class="deal-features">For All Top Models </p>
+                        </div>
+                        <div class="deal">
+                            <img src="images/deals_of_the_day/home_decor.webp" alt="Home Decor" class="deal-image"/>
+                            <p class="deal-name">Best Of Home Decor</p>
+                            <p class="deal-discount">From ₹79</p>
+                            <p class="deal-features">Lowest Price Ever</p>
+                        </div>
+                        <div class="deal">
+                            <img src="images/deals_of_the_day/metronaut.webp" alt="Metronaut" class="deal-image"/>
+                            <p class="deal-name">Metronaut, Provogue &...</p>
+                            <p class="deal-discount">From ₹249+Extra 10% Off</p>
+                            <p class="deal-features">Jackets, Dresses & More</p>
+                        </div>
+                        <div class="deal">
+                            <img src="images/deals_of_the_day/lava.webp" alt="Lava A1500" class="deal-image"/>
+                            <p class="deal-name">Lava A1500</p>
+                            <p class="deal-discount">Flat ₹830 off</p>
+                            <p class="deal-features">Now ₹999</p>
+                        </div>
                     </div>
-                    <div class="deal">
-                        <img src="images/deals_of_the_day/home_temples.webp" alt="Home Temples" class="deal-image"/>
-                        <p class="deal-name">Home Temples & More</p>
-                        <p class="deal-discount">Extra 10% off</p>
-                        <p class="deal-features">Space Saving Furniture</p>
-                    </div>
-                    <div class="deal">
-                        <img src="images/deals_of_the_day/tablet_cases.webp" alt="Tablet Cases" class="deal-image"/>
-                        <p class="deal-name">Premium Tablet Cases</p>
-                        <p class="deal-discount">Extra 10% off</p>
-                        <p class="deal-features">For All Top Models </p>
-                    </div>
-                    <div class="deal">
-                        <img src="images/deals_of_the_day/home_decor.webp" alt="Home Decor" class="deal-image"/>
-                        <p class="deal-name">Best Of Home Decor</p>
-                        <p class="deal-discount">From ₹79</p>
-                        <p class="deal-features">Lowest Price Ever</p>
-                    </div>
-                    <div class="deal">
-                        <img src="images/deals_of_the_day/metronaut.webp" alt="Metronaut" class="deal-image"/>
-                        <p class="deal-name">Metronaut, Provogue &...</p>
-                        <p class="deal-discount">From ₹249+Extra 10% Off</p>
-                        <p class="deal-features">Jackets, Dresses & More</p>
-                    </div>
-                    <div class="deal">
-                        <img src="images/deals_of_the_day/lava.webp" alt="Lava A1500" class="deal-image"/>
-                        <p class="deal-name">Lava A1500</p>
-                        <p class="deal-discount">Flat ₹830 off</p>
-                        <p class="deal-features">Now ₹999</p>
-                    </div>
+                    <button class="prev" id="prev-btn-deals">❮</button>
+                    <button class="next" id="next-btn-deals">❯</button>
                 </div>
                 <!-- End Of Deals Content Container -->
             </div>
@@ -198,43 +205,47 @@
             <!-- End Of Products Header Container -->
 
             <!-- Products Content Container -->
-            <div class="products-content">
-                <div class="product">
-                    <img src="images/books_and_music_instruments/harmonium.webp" alt="Harmonium" class="product-image"/>
-                    <p class="product-name">Harmoniums</p>
-                    <p class="product-discount">Upto 60% off</p>
-                    <p class="product-features">Shop Now!</p>
+            <div class="products-slider" id="products-slider">
+                <div class="products-content" id="products-content">
+                    <div class="product">
+                        <img src="images/books_and_music_instruments/harmonium.webp" alt="Harmonium" class="product-image"/>
+                        <p class="product-name">Harmoniums</p>
+                        <p class="product-discount">Upto 60% off</p>
+                        <p class="product-features">Shop Now!</p>
+                    </div>
+                    <div class="product">
+                        <img src="images/books_and_music_instruments/flutes.webp" alt="Flutes" class="product-image"/>
+                        <p class="product-name">Flutes</p>
+                        <p class="product-discount">Upto 80% off</p>
+                        <p class="product-features">Shop Now!</p>
+                    </div>
+                    <div class="product">
+                        <img src="images/books_and_music_instruments/guitars.webp" alt="Acoustic Guitars" class="product-image"/>
+                        <p class="product-name">Acoustic Guitars</p>
+                        <p class="product-discount">Starting ₹1799</p>
+                        <p class="product-features">Juarez, Revel</p>
+                    </div>
+                    <div class="product">
+                        <img src="images/books_and_music_instruments/musical_accessories.webp" alt="Musical Accessories" class="product-image"/>
+                        <p class="product-name">Musical Accessories</p>
+                        <p class="product-discount">Upto 80% off</p>
+                        <p class="product-features">Shop Now!</p>
+                    </div>
+                    <div class="product">
+                        <img src="images/books_and_music_instruments/microphone_accessories.webp" alt="Microphone Accessories" class="product-image"/>
+                        <p class="product-name">Microphone Accessories</p>
+                        <p class="product-discount">Uto 80% Off</p>
+                        <p class="product-features">Shop Now!</p>
+                    </div>
+                    <div class="product">
+                        <img src="images/books_and_music_instruments/guitars_new.webp" alt="Acoustic Guitars" class="product-image"/>
+                        <p class="product-name">Acoustic Guitars</p>
+                        <p class="product-discount">Starting ₹1999</p>
+                        <p class="product-features">By Revel</p>
+                    </div>
                 </div>
-                <div class="product">
-                    <img src="images/books_and_music_instruments/flutes.webp" alt="Flutes" class="product-image"/>
-                    <p class="product-name">Flutes</p>
-                    <p class="product-discount">Upto 80% off</p>
-                    <p class="product-features">Shop Now!</p>
-                </div>
-                <div class="product">
-                    <img src="images/books_and_music_instruments/guitars.webp" alt="Acoustic Guitars" class="product-image"/>
-                    <p class="product-name">Acoustic Guitars</p>
-                    <p class="product-discount">Starting ₹1799</p>
-                    <p class="product-features">Juarez, Revel</p>
-                </div>
-                <div class="product">
-                    <img src="images/books_and_music_instruments/musical_accessories.webp" alt="Musical Accessories" class="product-image"/>
-                    <p class="product-name">Musical Accessories</p>
-                    <p class="product-discount">Upto 80% off</p>
-                    <p class="product-features">Shop Now!</p>
-                </div>
-                <div class="product">
-                    <img src="images/books_and_music_instruments/microphone_accessories.webp" alt="Microphone Accessories" class="product-image"/>
-                    <p class="product-name">Microphone Accessories</p>
-                    <p class="product-discount">Uto 80% Off</p>
-                    <p class="product-features">Shop Now!</p>
-                </div>
-                <div class="product">
-                    <img src="images/books_and_music_instruments/guitars_new.webp" alt="Acoustic Guitars" class="product-image"/>
-                    <p class="product-name">Acoustic Guitars</p>
-                    <p class="product-discount">Starting ₹1999</p>
-                    <p class="product-features">By Revel</p>
-                </div>
+                <button class="prev" id="prev-btn-products">❮</button>
+                <button class="next" id="next-btn-products">❯</button>
             </div>
             <!-- End Of Products Content Container -->
         </div>
