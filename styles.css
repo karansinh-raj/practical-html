@@ -564,13 +564,7 @@ ul{
     .deals{
         width: 100%;
     }
-    .deals-content{
-        justify-content: center;
-    }
     .products{
         margin: 1rem 0.5rem;
-    }
-    .products-content{
-        justify-content: center;
     }
 }
